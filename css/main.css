@@ -1,0 +1,64 @@
+.landing-left h3, .landing-left h1 {
+    position: relative;
+    left: 100px;
+    z-index: 2;
+}
+.landing-left h3 {
+    left: 50px;
+    font-size: 1.8vw; 
+}
+.landing-left h1 {
+    font-size: 6vw; 
+}
+.landing-left-show {
+    height: 250px;
+    position: relative;
+
+}
+.landing-left-show div {
+    height: 100%;
+    width: 100%; 
+}
+.landing-left-show .left-1 {
+    background-image: url('../img/left-show.jpg');
+    background-position: center;
+    background-size: cover; 
+}
+.landing-left-show .left-2 {
+    background-image: url('../img/right-show.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute; 
+    top: 0;
+    animation:fade 4s linear infinite alternate 0s ;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.badge {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    transform: rotate(45deg) translate(-150px, -230px);
+    background-color: white;
+}
+.badge p {
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0; bottom: 0; top: 0;
+    width: 85%;
+    height: 35%;
+    transform: rotate(-45deg);
+}
